@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using arithmetic operators</title>
+</head>
+<body>
+    <script>
+        // multiplication
+        let num1 = 9;
+        let num2 = 10;
+        let product = num1 * num2;
+        console.log(product);
+
+        // logical and (&&)
+        let grade = 80;
+        if (grade >60 && grade <= 70){
+            console.log("Earned a credit!")
+        }else{
+            console.log("Failed");
+        }
+
+        //  increment and decrement operators (++ and ---)
+        let number = [1,2,3,4,,5,6,7];
+        for(let i=0; i<=7; i++){
+            console.log(number[i]);
+        }
+
+        // decrement
+        let numbers = [1,12,4,7,9];
+        for (let i=0; i<=5; i-- ){
+            console.log(numbers[i]);
+        }
+
+        // ternary operator (.. ? .. : .. )
+        let value = 7;
+        let result = (value % 2 === 0) ? "Even" : "Odd";
+        console.log(value + " is " + result);
+
+    </script>
+</body>
+</html>
