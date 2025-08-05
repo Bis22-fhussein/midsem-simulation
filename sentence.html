@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number of vowels</title>
+</head>
+<body>
+    <script>
+
+    </script>
+<body>
+    <script>
+        // Function to count vowels in a sentence
+        function countVowels(sentence) {
+            let count = 0;
+            let vowels = "aeiouAEIOU";
+            for (let char of sentence) {
+                if (vowels.includes(char)) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        // Example usage
+        let input = "Hello Fatima";
+        let vowelCount = countVowels(input);
+        console.log(`Number of vowels in '${input}':`, vowelCount);
+    </script>
+</body>
