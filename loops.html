@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> demonstrates the use of break and continue 
+            statements in a loop structure</title>
+</head>
+<body>
+    <script>
+        //  break or continue a loop
+        let names = ["Fatima", "Memory", "Cotrida", "Ritah"];
+        outerLoop: for (let i = 0; i < names.length; i++) {
+            for (let p = 0; p < names.length; p++) {
+                if (names[i] === "Cotrida") {
+                    break outerLoop; // breaks out of the outer loop when it reaches "Cotrida"
+                }
+                console.log(names[i] + " " + names[p]);
+            }
+        }
+        // break
+        // continue statement: skips the current iteration and continues with the next one
+        for (let l = 0; l < names.length; l++) {
+            if (names[l] === "Cotrida") {
+                continue; // skips the current iteration when it reaches "Cotrida"
+            }
+            console.log(names[l]);
+        }
+    </script>
+</body>
+</html>
